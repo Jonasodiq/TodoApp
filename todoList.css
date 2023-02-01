@@ -2,13 +2,13 @@
 :root {
   --primary-light: #aeb8b7cd;
   --primary: #d4d4d4cb;
-  --primary-dark: #5b0eeb;
+  --primary-dark: #0033ff;
   --white: #fff;
   --greyLight-0: #f9f9f9;
-  --greyLight-1: hsl(218, 16%, 87%);
-  --greyLight-2: hsl(264, 4%, 77%);
-  --greyLight-3: hsl(224, 41%, 82%);
-  --greyDark: hsl(223, 35%, 71%);
+  --greyLight-1: #d9dce3;
+  --greyLight-2: #c4c2c7;
+  --greyLight-3: #bec8e4;
+  --inner-padding: 1rem;
 }
 
 * {
@@ -23,7 +23,7 @@ body {
 .container {
   min-height: 700px;
   width: 100%;
-  background-color: var(--greyLight-1);
+  background-color: var(--primary);
   display: flex;
   align-items: start;
   justify-content: center;
@@ -31,11 +31,10 @@ body {
 }
 
 .todo {
-  --inner-padding: 1rem;
   max-width: 420px;
   width: 100%;
   background-color: var(--primary);
-  color: var(--greyLight-4);
+  color: var(--primary-dark);
   display: grid;
   border-radius: 10px;
   overflow: hidden;
