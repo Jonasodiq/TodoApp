@@ -17,23 +17,22 @@ const todoApp = () => {
         // Create ListItem - Создать элемент списка
         const ListItemElement = document.createElement('li') // Create Li 
         ListItemElement.classList.add('todo__item')          // Add class to Li
-        ListItemElement.textContent = inputValue          // Add input value to Li text
-        // listItemElement.innerHTML = '<span class="todo__text">' + inputValue + '</span>'
+        // ListItemElement.textContent = inputValue          // Add input value to Li text
+        ListItemElement.innerHTML = '<span class="todo__text">' + inputValue + '</span>'
         ListItemElement.addEventListener('click', completeTodo)
 
         // Create removeButton - Создать кнопку удаления
         const removeButton = document.createElement('button')
-        removeButton.classList.add('todo__remove', 'material-symbols-outlined')
-        removeButton.innerHTML = '<span class="material-symbols-outlined">remove</span>'
+        removeButton.classList.add('todo__remove', 'todo__remove-secondary', 'material-symbols-outlined')
+        removeButton.innerHTML = '<span class="material-symbols-outlined">delete</span>'
         removeButton.addEventListener('click', removeTodo)
 
         // Append created Li to list - Добавить создат Li в список List
-        // ListItemElement.append(removeButton)
         todoList.append(ListItemElement)
 
         // Append created button to listItem - Добавить создат button в список ListItem
         ListItemElement.append(removeButton) //ListItemElement
-        // todoList.append(removeButton)  todoList
+        // todoList.append(removeButton)  //todoList
 
         // Reset input value - Сбросить входное значение
         todoInput.value = ''
