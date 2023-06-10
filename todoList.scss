@@ -55,7 +55,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: start;
-    padding-top: 5rem;
+    padding: 5rem 3rem 0 3rem;
 }
 
 .todo {
@@ -63,7 +63,7 @@ body {
     width: 100%;
     background-color: var(--primary);
     color: var(--primary-dark);
-    display: grid;
+    // display: grid;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: $shadow-4;
@@ -87,6 +87,7 @@ body {
     }
 
     &__input {
+        width: 100%;
         border: none;
         background-color: #e4e4e4;
         padding: var(--inner-padding);
@@ -140,21 +141,23 @@ body {
     &__list {
         text-decoration: none;
         list-style: none;
-        margin: 0;
+        margin: 0 60px 0 0;
         padding: var(--inner-padding);
-        display: grid;
+        display: flex;
+        flex-direction: column;
         gap: 1rem;
-
+        position: relative;
     }
 
     &__item {
+        flex: 1;
         background-color: var(--primary);
         border-radius: 5px;
         font-family: "Roboto", sans-serif;
         font-size: 24px;
         color: #fb2de099;
         display: flex;
-        width: 330px;
+        width: 100%;
         justify-content: space-between;
         align-items: center;
         padding: 0 0 0 var(--inner-padding);
@@ -198,4 +201,17 @@ body {
             }
         }
     }
+}
+
+@media screen and (max-width: 878px) {
+    .todo__title {font-size: 2rem;}
+}
+@media screen and (max-width: 640px) {
+    .todo__item {font-size: 20px;} 
+}
+@media screen and (max-width: 480px) {
+    .todo__input, .todo__item {font-size: 16px;}
+}
+@media screen and (max-width: 375px) {
+    .todo__input, .todo__item {font-size: 10px;}
 }

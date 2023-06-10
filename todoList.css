@@ -27,7 +27,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: start;
-  padding-top: 5rem;
+  padding: 5rem 3rem 0 3rem;
 }
 
 .todo {
@@ -35,7 +35,6 @@ body {
   width: 100%;
   background-color: var(--primary);
   color: var(--primary-dark);
-  display: grid;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 1rem 1rem 2rem var(--greyLight-2), -0.5rem -0.5rem 2rem var(--greyLight-0);
@@ -57,6 +56,7 @@ body {
   width: 100%;
 }
 .todo__input {
+  width: 100%;
   border: none;
   background-color: #e4e4e4;
   padding: var(--inner-padding);
@@ -102,19 +102,22 @@ body {
 .todo__list {
   text-decoration: none;
   list-style: none;
-  margin: 0;
+  margin: 0 60px 0 0;
   padding: var(--inner-padding);
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
+  position: relative;
 }
 .todo__item {
+  flex: 1;
   background-color: var(--primary);
   border-radius: 5px;
   font-family: "Roboto", sans-serif;
   font-size: 24px;
   color: rgba(251, 45, 224, 0.6);
   display: flex;
-  width: 330px;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   padding: 0 0 0 var(--inner-padding);
@@ -151,6 +154,27 @@ body {
 }
 .todo__remove-secondary:active {
   box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2), inset -0.2rem -0.2rem 0.5rem var(--white);
+}
+
+@media screen and (max-width: 878px) {
+  .todo__title {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  .todo__item {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .todo__input, .todo__item {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .todo__input, .todo__item {
+    font-size: 10px;
+  }
 }
 
 /*# sourceMappingURL=todoList.css.map */
