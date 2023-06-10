@@ -5,7 +5,8 @@ const todoApp = () => {
     const todoList = document.querySelector('.todo__list')
 
     const addTodo = (event) => {
-        // Prevent Default behaviour of the form submitting and refreshing our browse - Предотвратить поведение по умолчанию при отправке формы и обновлении нашего браузера
+        // Prevent Default behaviour of the form submitting and refreshing our browse - 
+        //Предотвратить поведение по умолчанию при отправке формы и обновлении нашего браузера
         event.preventDefault()
 
         // Create variable with the value of input field - Создаем переменную со значением поля ввода
@@ -17,7 +18,7 @@ const todoApp = () => {
         // Create ListItem - Создать элемент списка
         const ListItemElement = document.createElement('li') // Create Li 
         ListItemElement.classList.add('todo__item')          // Add class to Li
-        // ListItemElement.textContent = inputValue          // Add input value to Li text
+        ListItemElement.textContent = inputValue          // Add input value to Li text
         ListItemElement.innerHTML = '<span class="todo__text">' + inputValue + '</span>'
         ListItemElement.addEventListener('click', completeTodo)
 
@@ -41,7 +42,6 @@ const todoApp = () => {
     const removeTodo = (event) => {
 
         const todoToBeRemoved = event.currentTarget.parentNode // hämta info
-
         todoToBeRemoved.remove() // ta bort button
     }
     // Function to complete a Todo
