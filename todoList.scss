@@ -46,15 +46,15 @@ $inner-shadow: inset .2rem .2rem .5rem var(--greyLight-2),
 body {
     margin: 0;
     padding: 0;
+    background-color: var(--primary);
 }
 
 .container {
-    min-height: 700px;
-    width: 100%;
-    background-color: var(--primary);
+    width: 100vh;
+    height: 100vh;
     display: flex;
-    align-items: start;
     justify-content: center;
+    align-items: start;
     padding-top: 5rem;
 }
 
