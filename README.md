@@ -1,1 +1,4 @@
-# TodoApp33
+# TodoApp
+
+# Devolop
+sass --watch todoList.scss todoList.css
