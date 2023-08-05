@@ -19,7 +19,7 @@ const todoApp = () => {
         const ListItemElement = document.createElement('li') // Create Li 
         ListItemElement.classList.add('todo__item')          // Add class to Li
         ListItemElement.textContent = inputValue          // Add input value to Li text
-        ListItemElement.innerHTML = '<span class="todo__text">' + inputValue + '</span>'
+        // ListItemElement.innerHTML = '<span class="todo__text">' + inputValue + '</span>'
         ListItemElement.addEventListener('click', completeTodo)
 
         // Create removeButton - Создать кнопку удаления
