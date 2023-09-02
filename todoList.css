@@ -161,6 +161,7 @@ body {
   height: 100vh;
 }
 .footer__content {
+  padding: 1rem;
   display: flex;
   justify-content: center;
   color: #777;
