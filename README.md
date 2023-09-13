@@ -4,6 +4,8 @@
 
 sass --watch todoList.scss todoList.css
 
+![TodoApp]()
+
 ## App Description:
 
 - This app is a simple to-do list manager implemented in JavaScript. It allows users to:
