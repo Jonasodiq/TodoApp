@@ -4,7 +4,7 @@
 
 sass --watch todoList.scss todoList.css
 
-![TodoApp]()
+![TodoApp](https://github.com/Jonasodiq/TodoApp/blob/main/TodoApp.jpeg)
 
 ## App Description:
 
