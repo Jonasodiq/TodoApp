@@ -18,4 +18,4 @@ sass --watch todoList.scss todoList.css
 
 - The app provides a basic interface for managing a to-do list and demonstrates how to manipulate the DOM using JavaScript to add, mark, and remove items.
 
-### [Link to](https://cerulean-cascaron-c8a71b.netlify.app/)
+### [Link to](https://cerulean-todo-app.netlify.app)
